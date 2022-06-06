@@ -1,0 +1,30 @@
+{
+  "name": "footballwebsite",
+  "version": "0.0.0",
+  "proxy": "http://localhost:9000",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/vue-fontawesome": "^3.0.0-5",
+    "@vuelidate/core": "^2.0.0-alpha.41",
+    "@vuelidate/validators": "^2.0.0-alpha.29",
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.3",
+    "fromnow": "^3.0.1",
+    "mitt": "^3.0.0",
+    "vue": "^3.2.33",
+    "vue-cookies": "^1.8.1",
+    "vue-final-modal": "^3.4.4",
+    "vue-router": "^4.0.13",
+    "vue-sessionstorage": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "vite": "^2.9.5"
+  }
+}
