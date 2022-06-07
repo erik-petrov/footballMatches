@@ -13,3 +13,7 @@ npm install
 npm run dev
 ```
 
+```sh
+go run ./api/main.go
+```
+
