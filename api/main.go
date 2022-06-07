@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"erik-petrov/footballWebsite/storage"
+	"errors"
 	"fmt"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -84,6 +85,7 @@ func signup(c echo.Context) error {
 	}
 	emails, err := db.Users.GetAllEmails()
 	if stringInSlice(jsonMap["email"].(string), emails) {
+		err := errors.New("duplicate email")
 		return err
 	}
 	u := storage.User{}

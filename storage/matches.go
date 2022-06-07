@@ -29,7 +29,8 @@ type (
 func (db Matches) GetMatches() (matches []Match, err error) {
 	const q = `select matches.id, date, length, t1.name as team1, t2.name as team2, score, inprogress from matches
 join teams t1 on matches.team1 = t1.id
-join teams t2 on matches.team2 = t2.id;`
+join teams t2 on matches.team2 = t2.id
+ORDER by date asc;`
 	return matches, db.Select(&matches, q)
 }
 

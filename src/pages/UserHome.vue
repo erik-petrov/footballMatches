@@ -62,7 +62,7 @@ export default {
       <div class="centered">
         <h2>Welcome {{userName}}!</h2>
         <div class="date-box">
-          <p>You've been with us for: {{day(this.created_at).subtract('2', 'h').fromNow(true)}}</p>
+          <p>You've been with us for: {{day(this.created_at).subtract('3', 'h').fromNow(true)}}</p>
           <p>You are: {{getAge(this.bday)}} years old</p>
           <p>Your gender: {{this.gender}}</p>
         </div>

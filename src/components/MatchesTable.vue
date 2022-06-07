@@ -52,7 +52,8 @@ export default{
       let timeDif = match.getTime() - new Date();
       let dayDif = timeDif / (1000 * 3600 * 24);
       let amount = Math.floor(dayDif)
-      if (amount === 0) {
+      console.log(amount)
+      if (amount == -1) {
         this.class="now"
         return this.class
       }
@@ -70,7 +71,7 @@ export default{
 </script>
 <style scoped>
 .now{
-  background-color: #2ae5d5;
+  background-color: #366b66;
 }
 
 .will{
@@ -80,7 +81,7 @@ export default{
 .table{
   width: 100%;
 }
-.scores{
+.scores:not(:empty){
   padding: 2px;
   text-align: center;
   border: 1px #2ae5d5 solid;

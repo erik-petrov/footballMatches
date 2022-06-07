@@ -33,6 +33,7 @@ insert into teams(name, coach) values('Liverpool', 'Jürgen Norbert Klopp');
 insert into teams(name, coach) values('Manchester City', 'Josep Guardiola i Sala');
 insert into teams(name, coach) values('Read Madrid', 'Carlo Ancelotti');
 
+insert into matches(date, length, team1, team2, score, inProgress) values('2022-04-03', '01:05:39', 3, 2, '5:1', false);
 insert into matches(date, length, team1, team2, score, inProgress) values(current_date, '01:10:02', 1, 3, '13:10', false);
 insert into matches(date, length, team1, team2, score, inProgress) values(current_date, '01:11:12', 2, 1, '5:1', true);
 insert into matches(date, length, team1, team2, score, inProgress) values('2022-07-04', null, 2, 3, null, false);
